@@ -1,9 +1,14 @@
 public class ClassRoom
 {
-    private String  roomNr;
-    private boolean computer;
-    private int     size;
+    private String  roomNr;     // consists of building floor and room number
+    private boolean computer;   // are there computers in the room
+    private int     size;       // number of seats
 
+    /*
+     * Constructor
+     * Parameters: Room number, computer, size
+     * It is creating a new Insatance of the class ClassRoom
+     */
     public ClassRoom(String newRoomNr, boolean newComputer, int newSize)
     {
         setRoomNr(newRoomNr);
@@ -13,6 +18,7 @@ public class ClassRoom
     
     public void setRoomNr(String newRoomNr)
     {
+        // set the property roomNr to the value of the parameter newRoomNr
         roomNr = newRoomNr;
     }
     
