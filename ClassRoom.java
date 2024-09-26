@@ -3,9 +3,7 @@ public class ClassRoom
     private String  roomNr;
     private boolean computer;
     private int     size;
-    private int     windows;
-    private boolean eating;
-    
+
     public void setRoomNr(String newRoomNr)
     {
         roomNr = newRoomNr;
