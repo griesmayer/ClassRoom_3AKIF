@@ -4,6 +4,13 @@ public class ClassRoom
     private boolean computer;
     private int     size;
 
+    public ClassRoom(String newRoomNr, boolean newComputer, int newSize)
+    {
+        setRoomNr(newRoomNr);
+        setComputer(newComputer);
+        setSize(newSize);
+    }
+    
     public void setRoomNr(String newRoomNr)
     {
         roomNr = newRoomNr;
