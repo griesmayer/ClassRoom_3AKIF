@@ -3,8 +3,7 @@ public class ClassRoom
     private String  roomNr;
     private boolean computer;
     private int     size;
-    private boolean beamer;
-    private boolean windows;
+    private int     windows;
     
     public void setRoomNr(String newRoomNr)
     {
