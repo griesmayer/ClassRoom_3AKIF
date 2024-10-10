@@ -71,7 +71,14 @@ public class ClassRoom
     
     public void printClassRoom()
     {
-        System.out.println("Classroom " + roomNr + " - Computer: " + computer + " - " + size + " Students");
+        if (computer == true)
+        {
+            System.out.println("Classroom " + roomNr + " - Computer - " + " - " + size + " Students");
+        }
+        else
+        {
+            System.out.println("Classroom " + roomNr + " - no Computer - " + " - " + size + " Students");
+        }
     }
 }
 
