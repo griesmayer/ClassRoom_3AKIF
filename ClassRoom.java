@@ -69,6 +69,25 @@ public class ClassRoom
         return size;
     }
     
+    public String getFloor()
+    {
+        //0123456789
+        //A.5.20
+        //Extra.2.22
+        
+        int pos1;
+        int pos2;
+        String floor;
+        
+        //1
+        //5
+        pos1 = roomNr.indexOf(".") + 1;
+        pos2 = roomNr.indexOf(".", pos1);
+        floor = roomNr.substring(pos1, pos2);
+        
+        return floor;
+    }
+    
     public void printClassRoom()
     {
         if (computer == true)
