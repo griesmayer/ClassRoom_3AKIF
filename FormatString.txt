@@ -1,0 +1,46 @@
+"B4.10"
+true
+29
+
+Classroom B4.10 - Computer: true - 29 Students
+
+Classroom_B4.10_-_Computer:_true_-_29_Students
+
+Classroom_
+B4.10
+_-_Computer:_
+true
+_-_
+29
+_Students
+
+
+Classroom_
+roomNr
+_-_Computer:_
+computer
+_-_
+size
+_Students
+
+
+"Classroom_"
+roomNr
+"_-_Computer:_"
+computer
+"_-_"
+size
+"_Students"
+
+"Classroom_" + roomNr + "_-_Computer:_" + computer + "_-_" + size + "_Students"
+
+System.out.println("Hello World!");
+    ==> Hello World!
+
+System.out.println("Classroom " + roomNr + " - Computer: " + computer + " - " + size + " Students");
+
+
+
+
+
+

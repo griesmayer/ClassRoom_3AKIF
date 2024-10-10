@@ -16,6 +16,28 @@ public class ClassRoom
         setSize(newSize);
     }
     
+    public ClassRoom(String newRoomNr, boolean newComputer)
+    {
+        setRoomNr(newRoomNr);
+        setComputer(newComputer);
+        setSize(25);
+    }
+    
+    public ClassRoom(String newRoomNr)
+    {
+        setRoomNr(newRoomNr);
+        setComputer(false);
+        setSize(25);
+    }
+
+    public ClassRoom()
+    {
+        setRoomNr("A.4.11");
+        setComputer(false);
+        setSize(25);
+        
+    }
+  
     public void setRoomNr(String newRoomNr)
     {
         // set the property roomNr to the value of the parameter newRoomNr
