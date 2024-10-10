@@ -9,23 +9,23 @@ public class ClassRoom
      * Parameters: Room number, computer, size
      * It is creating a new Insatance of the class ClassRoom
      */
-    public ClassRoom(String newRoomNr, boolean newComputer, int newSize)
+    public ClassRoom(String roomNr, boolean computer, int size)
     {
-        setRoomNr(newRoomNr);
-        setComputer(newComputer);
-        setSize(newSize);
+        setRoomNr(roomNr);
+        setComputer(computer);
+        setSize(size);
     }
     
-    public ClassRoom(String newRoomNr, boolean newComputer)
+    public ClassRoom(String roomNr, boolean computer)
     {
-        setRoomNr(newRoomNr);
-        setComputer(newComputer);
+        setRoomNr(roomNr);
+        setComputer(computer);
         setSize(25);
     }
     
-    public ClassRoom(String newRoomNr)
+    public ClassRoom(String roomNr)
     {
-        setRoomNr(newRoomNr);
+        setRoomNr(roomNr);
         setComputer(false);
         setSize(25);
     }
@@ -38,20 +38,20 @@ public class ClassRoom
         
     }
   
-    public void setRoomNr(String newRoomNr)
+    public void setRoomNr(String roomNr)
     {
         // set the property roomNr to the value of the parameter newRoomNr
-        roomNr = newRoomNr;
+        this.roomNr = roomNr;
     }
     
-    public void setComputer(boolean newComputer)
+    public void setComputer(boolean computer)
     {
-        computer = newComputer;
+        this.computer = computer;
     }
     
-    public void setSize(int newSize)
+    public void setSize(int size)
     {
-        size = newSize;
+        this.size = size;
     }
     
     public String getRoomNr()
