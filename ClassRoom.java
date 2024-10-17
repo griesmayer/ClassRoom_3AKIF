@@ -51,7 +51,16 @@ public class ClassRoom
     
     public void setSize(int size)
     {
-        this.size = size;
+        // 10 .. 40
+        if ((size >= 10) && (size <= 40))
+        {
+            this.size = size;
+        }
+        else
+        {
+            System.out.println("Error: wrong size. Should be between 10 and 40!");
+            this.size = 25;
+        }
     }
     
     public String getRoomNr()
@@ -68,7 +77,7 @@ public class ClassRoom
     {
         return size;
     }
-    
+
     public String getFloor()
     {
         //0123456789
