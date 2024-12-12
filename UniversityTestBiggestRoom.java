@@ -13,7 +13,7 @@ public class UniversityTestBiggestRoom
         University uni;
         
         uni = new University();
-        assertEquals (uni.biggestClassRoom(), -999);
+        assertEquals (uni.biggestClassRoom(), null);
     }
     
     @Test
@@ -25,7 +25,7 @@ public class UniversityTestBiggestRoom
         uni = new University();
         r0 = new ClassRoom("B1.11", false, 20);
         uni.add(r0);
-        assertEquals (uni.biggestClassRoom(), 20);
+        assertEquals (uni.biggestClassRoom(), r0);
     }
 
     @Test
@@ -39,7 +39,7 @@ public class UniversityTestBiggestRoom
         r1 = new ClassRoom("C2.22", false, 25);
         uni.add(r0);
         uni.add(r1);
-        assertEquals (uni.biggestClassRoom(), 25);
+        assertEquals (uni.biggestClassRoom(), r1);
     }
 
     @Test
@@ -55,7 +55,7 @@ public class UniversityTestBiggestRoom
         uni.add(r0);
         uni.add(r1);
         uni.add(r2);
-        assertEquals (uni.biggestClassRoom(), 30);
+        assertEquals (uni.biggestClassRoom(), r2);
     }
 
     @Test
@@ -71,7 +71,7 @@ public class UniversityTestBiggestRoom
         uni.add(r0);
         uni.add(r1);
         uni.add(r2);
-        assertEquals (uni.biggestClassRoom(), 28);
+        assertEquals (uni.biggestClassRoom(), r1);
     }
 
     @Test
@@ -87,7 +87,7 @@ public class UniversityTestBiggestRoom
         uni.add(r0);
         uni.add(r1);
         uni.add(r2);
-        assertEquals (uni.biggestClassRoom(), 29);
+        assertEquals (uni.biggestClassRoom(), r0);
     }
 
 

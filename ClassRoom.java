@@ -1,8 +1,9 @@
 public class ClassRoom
 {
-    private String  roomNr;     // consists of building floor and room number
-    private boolean computer;   // are there computers in the room
-    private int     size;       // number of seats
+    private String     roomNr;     // consists of building floor and room number
+    private boolean    computer;   // are there computers in the room
+    private int        size;       // number of seats
+    private University university;
 
     /*
      * Constructor
@@ -15,14 +16,14 @@ public class ClassRoom
         setComputer(computer);
         setSize(size);
     }
-    
+
     public ClassRoom(String roomNr, boolean computer)
     {
         setRoomNr(roomNr);
         setComputer(computer);
         setSize(25);
     }
-    
+
     public ClassRoom(String roomNr)
     {
         setRoomNr(roomNr);
@@ -35,20 +36,28 @@ public class ClassRoom
         setRoomNr("A.4.11");
         setComputer(false);
         setSize(25);
-        
+
     }
-  
+
     public void setRoomNr(String roomNr)
     {
         // set the property roomNr to the value of the parameter newRoomNr
-        this.roomNr = roomNr;
+        if (roomNr != null)
+        {
+            this.roomNr = roomNr;
+        }
+        else
+        {
+            System.out.println("Error: no valid room number!");
+            this.roomNr = "A.4.11";
+        }
     }
-    
+
     public void setComputer(boolean computer)
     {
         this.computer = computer;
     }
-    
+
     public void setSize(int size)
     {
         // 10 .. 40
@@ -63,19 +72,29 @@ public class ClassRoom
         }
     }
     
+    public void setUniversity(University university)
+    {
+        this.university = university;
+    }
+
     public String getRoomNr()
     {
         return roomNr;
     }
-    
+
     public boolean getComputer()
     {
         return computer;
     }
-    
+
     public int getSize()
     {
         return size;
+    }
+    
+    public University getUniversity ()
+    {
+        return university;
     }
 
     public String getFloor()
@@ -83,20 +102,20 @@ public class ClassRoom
         //0123456789
         //A.5.20
         //Extra.2.22
-        
+
         int pos1;
         int pos2;
         String floor;
-        
+
         //1
         //5
         pos1 = roomNr.indexOf(".") + 1;
         pos2 = roomNr.indexOf(".", pos1);
         floor = roomNr.substring(pos1, pos2);
-        
+
         return floor;
     }
-    
+
     public void printClassRoom()
     {
         if (computer == true)
@@ -109,13 +128,6 @@ public class ClassRoom
         }
     }
 }
-
-
-
-
-
-
-
 
 
 
